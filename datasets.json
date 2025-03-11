@@ -1,0 +1,160 @@
+{
+  "datasets": [
+    {
+        "name": "Stadtteilprofile",
+        "publisher": "Stadt Karlsruhe",
+        "topics": ["Bildung", "Gesellschaft", "Verkehr", "Wirtschaft"],
+        "formats": ["PDF", "Tabellen"],
+        "size": "220 Seiten plus Karten",
+        "description": "Die statistische Sonderveröffentlichung ...",
+        "contact": "Josef Attmann (OK Lab Karlsruhe)",
+        "use_cases": "Spiel Digital Twin zu Karlsruhe – Stadtteile bauen",
+        "download_url": "https://web6.karlsruhe.de/Stadtentwicklung/statistik/pdf/2010/2010-stadtteilprofile.pdf",
+        "image_path": "img/stadtteilprofile.png"
+    },
+    {
+      "name": "3D Daten Karlsruhe",
+      "publisher": "IT Amt Karlsruhe",
+      "topics": ["Stadtplanung", "Geodaten"],
+      "formats": ["cityjson", "citygml"],
+      "size": "KA-Cloud Speicher",
+      "description": "3D-Stadtmodelle im CityJSON und CityGML Format, möglicherweise ohne Texturen. Zugänglich über das Karlsruher Transparenzportal.",
+      "contact": "IT Amt Karlsruhe",
+      "use_cases": "Mini-City Projekte, 3D-Visualisierungen",
+      "download_url": "https://transparenz.karlsruhe.de/3d-daten",
+      "image_path": "img/3d-karlsruhe.png"
+    },
+    {
+      "name": "Stadtradeln 2023/2024",
+      "publisher": "Umweltamt Karlsruhe",
+      "topics": ["Mobilität", "Umwelt"],
+      "formats": ["geojson"],
+      "size": "Jahresdatensatz",
+      "description": "Daten zu gefahrenen Radwegen in Karlsruhe aus dem Stadtradeln-Programm",
+      "contact": "Umweltamt Karlsruhe",
+      "use_cases": "Mobilitätsanalyse Radverkehr",
+      "download_url": "",
+      "image_path": "img/stadtradeln.png"
+    },
+    {
+      "name": "Nextbike Stationsdaten",
+      "publisher": "FZI/Privat",
+      "topics": ["Mobilität", "Sharing Economy"],
+      "formats": ["json"],
+      "size": "3 Jahre, 5-Minuten-Intervalle",
+      "description": "Historische Daten von Nextbike-Stationen via REST-Schnittstelle gesammelt (seit 2022)",
+      "contact": "FZI Forschungszentrum Informatik",
+      "use_cases": "Bike-Sharing Analysen",
+      "download_url": "https://api.nextbike.net",
+      "image_path": "img/nextbike.png"
+    },
+    {
+      "name": "TAF-BW Trajektoriendaten",
+      "publisher": "FZI",
+      "topics": ["Autonomes Fahren", "Mobilitätsforschung"],
+      "formats": ["CSV", "JSON"],
+      "size": "Forschungskreuzungs-Datensatz",
+      "description": "Trajektoriendaten von autonomen Fahrzeugen an einer Forschungs-Kreuzung",
+      "contact": "TAF-BW Projektteam",
+      "use_cases": "Autonomes Fahren Entwicklung",
+      "download_url": "https://taf-bw.fzi.de/data",
+      "image_path": "img/taf-bw.png"
+    },
+    {
+      "name": "Ratsinformationssystem Karlsruhe",
+      "publisher": "Stadt Karlsruhe/AK",
+      "topics": ["Politik", "Transparenz"],
+      "formats": ["PDF", "Text"],
+      "size": "Laufend aktualisiert",
+      "description": "Volltexte politischer Beschlüsse und Dokumente mit Verbesserungspotenzial bei Metadaten",
+      "contact": "Stadtarchiv Karlsruhe",
+      "use_cases": "Politische Analysen",
+      "download_url": "https://ris.karlsruhe.de",
+      "image_path": "img/ris.png"
+    },
+    {
+      "name": "Klimaschutzkonzept Dashboard",
+      "publisher": "Stadt Karlsruhe/OK Lab",
+      "topics": ["Klima", "Energie"],
+      "formats": ["PDF", "XLS"],
+      "size": "Multimodaler Datensatz",
+      "description": "Datenbasis für das Klimadashboard-Prototyp mit Maßnahmenkatalog",
+      "contact": "Klimaschutzteam Karlsruhe",
+      "use_cases": "Klimamonitoring",
+      "download_url": "https://klima.karlsruhe.de/daten",
+      "image_path": "img/klimadashboard.png"
+    },
+    {
+      "name": "IDEAL Household Energy Dataset",
+      "publisher": "FZI",
+      "topics": ["Energie", "Smart Home"],
+      "formats": ["CSV"],
+      "size": "255 UK-Haushalte",
+      "description": "Stromverbrauchsdaten britischer Haushalte für Lastprognosen und Solaratlas-Anbindung",
+      "contact": "FZI Energieinformatik",
+      "use_cases": "Energiemanagement-Forschung",
+      "download_url": "https://fzi.de/energy-data",
+      "image_path": "img/ideal-energy.png"
+    },
+    {
+      "name": "Fahrradunfalldaten",
+      "publisher": "Polizei Karlsruhe",
+      "topics": ["Verkehrssicherheit", "Geodaten"],
+      "formats": ["GeoPKG", "geojson"],
+      "size": "Jahresstatistiken",
+      "description": "Georeferenzierte Unfalldaten mit Fahrradbeteiligung",
+      "contact": "Verkehrspolizei Karlsruhe",
+      "use_cases": "Unfallschwerpunkte Analyse",
+      "download_url": "https://verkehr.karlsruhe.de/unfalldaten",
+      "image_path": "img/unfaelle-bikes.png"
+    },
+    {
+      "name": "ZKM Archivdaten",
+      "publisher": "ZKM Karlsruhe",
+      "topics": ["Kultur", "Digital Humanities"],
+      "formats": ["json"],
+      "size": "Multientitäten-Archiv",
+      "description": "Daten zu Ausstellungen, Kunstwerken und Besucherbewegungen der Renaissance 3.0 Ausstellung",
+      "contact": "ZKM Archivabteilung",
+      "use_cases": "Kulturwissenschaftliche Forschung",
+      "download_url": "https://zkm.de/archiv",
+      "image_path": "img/zkm-archiv.png"
+    },
+    {
+      "name": "KA-Telraam Verkehrszähler",
+      "publisher": "OK Lab Karlsruhe",
+      "topics": ["Mobilität", "IoT"],
+      "formats": ["CSV"],
+      "size": "Echtzeitdatenstrom",
+      "description": "Auswertungen der Raspberry Pi-basierten Verkehrszählstellen",
+      "contact": "OK Lab Sensorics Team",
+      "use_cases": "Verkehrsflussanalysen",
+      "download_url": "",
+      "image_path": "img/telraam.png"
+    },
+    {
+      "name": "Transparenzportal Gesamtdaten",
+      "publisher": "Stadt Karlsruhe",
+      "topics": ["Open Data", "Verwaltung"],
+      "formats": ["Verschiedene"],
+      "size": "Umfassende Sammlung",
+      "description": "Aggregation aller verfügbaren Datensätze des Karlsruher Transparenzportals",
+      "contact": "Open Data Beauftragte",
+      "use_cases": "Cross-Domain Analysen",
+      "download_url": "https://transparenz.karlsruhe.de",
+      "image_path": "img/transparenzportal.png"
+    },
+    {
+      "name": "HVD Baden-Württemberg",
+      "publisher": "Land Baden-Württemberg",
+      "topics": ["Geodaten", "Umwelt"],
+      "formats": ["TBD"],
+      "size": "Landesweite Datensätze",
+      "description": "High Value Datasets mit Fokus auf Luftbilder und Umweltdaten (in Planung)",
+      "contact": "LUBW Landesanstalt",
+      "use_cases": "Überregionale Studien",
+      "download_url": "https://opendata.baden-wuerttemberg.de",
+      "image_path": "img/hvd-bw.png"
+    }
+  ]
+}
