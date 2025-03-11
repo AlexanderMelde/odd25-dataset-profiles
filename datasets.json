@@ -54,11 +54,11 @@
       "topics": ["Autonomes Fahren", "Mobilitätsforschung"],
       "formats": ["CSV", "JSON"],
       "size": "Forschungskreuzungs-Datensatz",
-      "description": "Trajektoriendaten von autonomen Fahrzeugen an einer Forschungs-Kreuzung",
+      "description": "Testfeld Autonomes Fahren BW: Trajektoriendaten von autonomen Fahrzeugen an einer Forschungs-Kreuzung",
       "contact": "TAF-BW Projektteam",
       "use_cases": "Autonomes Fahren Entwicklung",
       "download_url": "https://taf-bw.fzi.de/data",
-      "image_path": "img/taf-bw.png"
+      "image_path": "img/autonomousdriving.png"
     },
     {
       "name": "Ratsinformationssystem Karlsruhe",
@@ -118,7 +118,7 @@
       "contact": "ZKM Archivabteilung",
       "use_cases": "Kulturwissenschaftliche Forschung",
       "download_url": "https://zkm.de/archiv",
-      "image_path": "img/zkm-archiv.png"
+      "image_path": "img/zkmbesucher.png"
     },
     {
       "name": "KA-Telraam Verkehrszähler",
