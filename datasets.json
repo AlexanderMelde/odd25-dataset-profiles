@@ -6,23 +6,23 @@
         "topics": ["Bildung", "Gesellschaft", "Verkehr", "Wirtschaft"],
         "formats": ["PDF", "Tabellen"],
         "size": "220 Seiten plus Karten",
-        "description": "Die statistische Sonderveröffentlichung ...",
+        "description": "Die statistische Sonderveröffentlichung 'Stadtteilprofile  Karlsruhe' enthält die wichtigsten Zahlen und Fakten zu den Karlsruher  Stadtteilen und bietet einen systematischen und leicht verständlichen  Überblick über die Struktur und Entwicklung aller Stadtteile. Abgebildet  werden die wichtigsten Meilensteine der Geschichte der Stadtteile und  viele weitere Themengebiete wie beispielsweise Bevölkerung, Wirtschaft,  Sicherheit, Soziale Infrastruktur, Sportstätten, Kultur und Bildung. Zahlen und Fakten zu den Karlsruher Stadtteilen werden als pdf-Datei bereitgestellt",
         "contact": "Josef Attmann (OK Lab Karlsruhe)",
-        "use_cases": "Spiel Digital Twin zu Karlsruhe – Stadtteile bauen",
-        "download_url": "https://web6.karlsruhe.de/Stadtentwicklung/statistik/pdf/2010/2010-stadtteilprofile.pdf",
-        "image_path": "img/stadtteilprofile.png"
+        "useCases": "Spiel Digital Twin zu Karlsruhe – Stadtteile bauen",
+        "downloadUrl": "https://ok-lab-karlsruhe.de/projects/karlsruhe/odd2024/data/Stadtteilprofile.zip",
+        "imagePath": "img/stadtteilprofile.png"
     },
     {
       "name": "3D Daten Karlsruhe",
       "publisher": "IT Amt Karlsruhe",
       "topics": ["Stadtplanung", "Geodaten"],
       "formats": ["cityjson", "citygml"],
-      "size": "KA-Cloud Speicher",
-      "description": "3D-Stadtmodelle im CityJSON und CityGML Format, möglicherweise ohne Texturen. Zugänglich über das Karlsruher Transparenzportal.",
-      "contact": "IT Amt Karlsruhe",
-      "use_cases": "Mini-City Projekte, 3D-Visualisierungen",
-      "download_url": "https://transparenz.karlsruhe.de/3d-daten",
-      "image_path": "img/3d-karlsruhe.png"
+      "size": "3GB",
+      "description": "3D-Stadtmodell von Karlsruhe. Im CityJSON und CityGML Format. Passwort: odd2025",
+      "contact": "Sven Klenert (IT Amt Karlsruhe)",
+      "useCases": "Digital Twin, Mini-City Projekte, 3D-Visualisierungen",
+      "downloadUrl": "https://my.hidrive.com/share/7tham.o1ma#$/ka3d",
+      "imagePath": "img/digitaltwin.png"
     },
     {
       "name": "Stadtradeln 2023/2024",
@@ -32,9 +32,9 @@
       "size": "Jahresdatensatz",
       "description": "Daten zu gefahrenen Radwegen in Karlsruhe aus dem Stadtradeln-Programm",
       "contact": "Umweltamt Karlsruhe",
-      "use_cases": "Mobilitätsanalyse Radverkehr",
-      "download_url": "",
-      "image_path": "img/stadtradeln.png"
+      "useCases": "Mobilitätsanalyse Radverkehr",
+      "downloadUrl": "https://my.hidrive.com/share/7tham.o1ma#$/Stadtradeln_2023-2024",
+      "imagePath": "img/stadtradeln.png"
     },
     {
       "name": "Nextbike Stationsdaten",
@@ -44,9 +44,9 @@
       "size": "3 Jahre, 5-Minuten-Intervalle",
       "description": "Historische Daten von Nextbike-Stationen via REST-Schnittstelle gesammelt (seit 2022)",
       "contact": "FZI Forschungszentrum Informatik",
-      "use_cases": "Bike-Sharing Analysen",
-      "download_url": "https://api.nextbike.net",
-      "image_path": "img/nextbike.png"
+      "useCases": "Bike-Sharing Analysen",
+      "downloadUrl": "https://api.nextbike.net",
+      "imagePath": "img/nextbike.png"
     },
     {
       "name": "TAF-BW Trajektoriendaten",
@@ -56,9 +56,9 @@
       "size": "Forschungskreuzungs-Datensatz",
       "description": "Testfeld Autonomes Fahren BW: Trajektoriendaten von autonomen Fahrzeugen an einer Forschungs-Kreuzung",
       "contact": "TAF-BW Projektteam",
-      "use_cases": "Autonomes Fahren Entwicklung",
-      "download_url": "https://taf-bw.fzi.de/data",
-      "image_path": "img/autonomousdriving.png"
+      "useCases": "Autonomes Fahren Entwicklung",
+      "downloadUrl": "https://taf-bw.fzi.de/data",
+      "imagePath": "img/autonomousdriving.png"
     },
     {
       "name": "Ratsinformationssystem Karlsruhe",
@@ -68,9 +68,9 @@
       "size": "Laufend aktualisiert",
       "description": "Volltexte politischer Beschlüsse und Dokumente mit Verbesserungspotenzial bei Metadaten",
       "contact": "Stadtarchiv Karlsruhe",
-      "use_cases": "Politische Analysen",
-      "download_url": "https://ris.karlsruhe.de",
-      "image_path": "img/ris.png"
+      "useCases": "Politische Analysen",
+      "downloadUrl": "https://ris.karlsruhe.de",
+      "imagePath": "img/ris.png"
     },
     {
       "name": "Klimaschutzkonzept Dashboard",
@@ -80,9 +80,9 @@
       "size": "Multimodaler Datensatz",
       "description": "Datenbasis für das Klimadashboard-Prototyp mit Maßnahmenkatalog",
       "contact": "Klimaschutzteam Karlsruhe",
-      "use_cases": "Klimamonitoring",
-      "download_url": "https://klima.karlsruhe.de/daten",
-      "image_path": "img/klimadashboard.png"
+      "useCases": "Klimamonitoring",
+      "downloadUrl": "https://klima.karlsruhe.de/daten",
+      "imagePath": "img/klimadashboard.png"
     },
     {
       "name": "IDEAL Household Energy Dataset",
@@ -92,9 +92,9 @@
       "size": "255 UK-Haushalte",
       "description": "Stromverbrauchsdaten britischer Haushalte für Lastprognosen und Solaratlas-Anbindung",
       "contact": "FZI Energieinformatik",
-      "use_cases": "Energiemanagement-Forschung",
-      "download_url": "https://fzi.de/energy-data",
-      "image_path": "img/ideal-energy.png"
+      "useCases": "Energiemanagement-Forschung",
+      "downloadUrl": "https://fzi.de/energy-data",
+      "imagePath": "img/ideal-energy.png"
     },
     {
       "name": "Fahrradunfalldaten",
@@ -104,9 +104,9 @@
       "size": "Jahresstatistiken",
       "description": "Georeferenzierte Unfalldaten mit Fahrradbeteiligung",
       "contact": "Verkehrspolizei Karlsruhe",
-      "use_cases": "Unfallschwerpunkte Analyse",
-      "download_url": "https://verkehr.karlsruhe.de/unfalldaten",
-      "image_path": "img/unfaelle-bikes.png"
+      "useCases": "Unfallschwerpunkte Analyse",
+      "downloadUrl": "https://verkehr.karlsruhe.de/unfalldaten",
+      "imagePath": "img/unfaelle-bikes.png"
     },
     {
       "name": "ZKM Archivdaten",
@@ -116,9 +116,9 @@
       "size": "Multientitäten-Archiv",
       "description": "Daten zu Ausstellungen, Kunstwerken und Besucherbewegungen der Renaissance 3.0 Ausstellung",
       "contact": "ZKM Archivabteilung",
-      "use_cases": "Kulturwissenschaftliche Forschung",
-      "download_url": "https://zkm.de/archiv",
-      "image_path": "img/zkmbesucher.png"
+      "useCases": "Kulturwissenschaftliche Forschung",
+      "downloadUrl": "https://zkm.de/archiv",
+      "imagePath": "img/zkmbesucher.png"
     },
     {
       "name": "KA-Telraam Verkehrszähler",
@@ -128,9 +128,9 @@
       "size": "Echtzeitdatenstrom",
       "description": "Auswertungen der Raspberry Pi-basierten Verkehrszählstellen",
       "contact": "OK Lab Sensorics Team",
-      "use_cases": "Verkehrsflussanalysen",
-      "download_url": "",
-      "image_path": "img/telraam.png"
+      "useCases": "Verkehrsflussanalysen",
+      "downloadUrl": "",
+      "imagePath": "img/telraam.png"
     },
     {
       "name": "Transparenzportal Gesamtdaten",
@@ -140,9 +140,9 @@
       "size": "Umfassende Sammlung",
       "description": "Aggregation aller verfügbaren Datensätze des Karlsruher Transparenzportals",
       "contact": "Open Data Beauftragte",
-      "use_cases": "Cross-Domain Analysen",
-      "download_url": "https://transparenz.karlsruhe.de",
-      "image_path": "img/transparenzportal.png"
+      "useCases": "Cross-Domain Analysen",
+      "downloadUrl": "https://transparenz.karlsruhe.de",
+      "imagePath": "img/transparenzportal.png"
     },
     {
       "name": "HVD Baden-Württemberg",
@@ -152,9 +152,9 @@
       "size": "Landesweite Datensätze",
       "description": "High Value Datasets mit Fokus auf Luftbilder und Umweltdaten (in Planung)",
       "contact": "LUBW Landesanstalt",
-      "use_cases": "Überregionale Studien",
-      "download_url": "https://opendata.baden-wuerttemberg.de",
-      "image_path": "img/hvd-bw.png"
+      "useCases": "Überregionale Studien",
+      "downloadUrl": "https://opendata.baden-wuerttemberg.de",
+      "imagePath": "img/hvd-bw.png"
     }
   ]
 }

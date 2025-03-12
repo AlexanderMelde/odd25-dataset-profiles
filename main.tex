@@ -29,24 +29,27 @@ function generate_entries()
             \textbf{Größe:} ]] .. escape_latex(ds.size) .. [[ \\[0.5em]
             \textbf{Kurzbeschreibung:}\\
             ]].. escape_latex(ds.description) ..[[ \\[0.5em]
+            \begin{center}
         ]]
+
       
-        image = (ds.image_path and ds.image_path ~= "")  
-                and [[\includegraphics[width=\textwidth,height=8cm,keepaspectratio]{]] .. ds.image_path .. [[}]]
+        image = (ds.imagePath and ds.imagePath ~= "")  
+                and [[\includegraphics[width=\textwidth,height=8cm,keepaspectratio]{]] .. ds.imagePath .. [[}]]
                 or [[\framebox[\textwidth][c]{\parbox{8cm}{\centering Bildplatzhalter}}]]
 
         contact = [[
+            \end{center}
             \\
             \textbf{Ansprechpartner:}  
             ]] .. escape_latex(ds.contact) .. [[
             \\[1em]
             \textbf{Verwendungszwecke:} 
-            ]] ..  escape_latex(ds.use_cases) .. [[
+            ]] ..  escape_latex(ds.useCases) .. [[
             \\[1em]
             \textbf{Download:} 
-            \url{]] .. escape_latex(ds.download_url) .. [[}\\
+            \url{]] .. ds.downloadUrl .. [[}\\
             \begin{center}
-                \qrcode[height=3cm]{]] .. escape_latex(ds.download_url) .. [[}
+                \qrcode[height=3cm]{]] .. escape_latex(ds.downloadUrl) .. [[}
             \end{center}
             \clearpage
             ]]
