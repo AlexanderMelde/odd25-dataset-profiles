@@ -1,12 +1,12 @@
 {
   "datasets": [
     {
-      "name": "3D Daten Karlsruhe",
+      "name": "3D-Stadtmodell & Mini City Karlsruhe",
       "publisher": "IT Amt Karlsruhe",
       "topics": ["Stadtplanung", "Geodaten"],
       "formats": ["cityjson", "citygml"],
       "size": "3GB",
-      "description": "3D-Stadtmodell von Karlsruhe. Im CityJSON und CityGML Format. Passwort: odd2025 TODO Hier auch Mini-City erwähnen",
+      "description": "Karlsruhe in 3D erkunden: Gebäude, Gelände, Verkehrsinfrastruktur, Vegetation, Stadtmobiliar und Bäume. Die Daten stehen in verschiedenen Levels of Detail (LoD) bereit, wobei Kernbereiche der Innenstadt sogar fotorealistisch texturiert sind. Auf der Grundlage des Digitalen Zwillings können komplexe und dynamische Zusammenhänge anschaulich dargestellt werden, sowie mögliche Veränderungen schon vorab in Simulationen getestet werden. Die 3D-Daten können beim Projekt 'Mini City Karlsruhe' eingesetzt werden, um eine real-daten-basierte 'Comic-Version' in der Compuerspielewelt von Roblox nachzubauen. Dieser digitale Zwilling der Stadt Karlsruhe soll zur digitalen Bürgerbeteiligung und zum interaktiven Teilhabe-Tool ausgebaut werden. Passwort: odd2025",
       "contact": "Daniel Schwarz (Hochschule Karlsruhe), Sven Klenert (IT Amt Karlsruhe)",
       "useCases": "Digital Twin, Mini-City Projekte, 3D-Visualisierungen",
       "downloadUrl": "https://my.hidrive.com/share/7tham.o1ma#$/ka3d",
@@ -74,13 +74,13 @@
     },
     {
       "name": "Klimaschutzkonzept & Daten für Klima-Dashboard",
-      "publisher": "Stadt Karlsruhe / OK Lab Karlsruhe",
+      "publisher": "Stadt Karlsruhe (Umweltamt) / OK Lab Karlsruhe",
       "topics": ["Klima", "Energie"],
-      "formats": ["PDF", "XLS"],
+      "formats": ["PDF", "XLS", "CSV", "SHP"],
       "size": "TODO",
-      "description": "TODO Datenbasis für das Klimadashboard-Prototyp mit Maßnahmenkatalog. Wo steht Karlsruhe beim Klimaschutz? Dashboard Prototyp unter: https://dashboard.daten.city ",
-      "contact": "TODO Person",
-      "useCases": "Klimamonitoring",
+      "description": "TODO Datenbasis für das Klimadashboard-Prototyp mit Maßnahmenkatalog. Wo steht Karlsruhe beim Klimaschutz? Dashboard Prototyp unter: https://dashboard.daten.city . QGIS, Geopandas, Shapely etc. nützlich.",
+      "contact": "Andreas Kugel (OK Lab Karlsruhe)",
+      "useCases": "Klimamonitoring, Klimadashboard, Heatmaps, OSM-Synchronisation",
       "downloadUrl": "TODO",
       "imagePath": "img/klimadashboard.png"
     },
@@ -90,7 +90,7 @@
       "topics": ["Verkehrssicherheit", "Geodaten"],
       "formats": ["GeoPKG", "geojson", "XLSX"],
       "size": "2017 bis 2023",
-      "description": "Georeferenzierte Unfalldaten mit Fahrradbeteiligung. Passwort: odd2025",
+      "description": "Georeferenzierte Unfalldaten mit Fahrradbeteiligung. Die Liste der Verkehrsunfälle mit Fahrradbeteiligung in Stadt- und Landkreis Karlsruhe kommt direkt vom Polizeipräsidium Karlsruhe und wurde über Frag den Staat angefragt. Passwort: odd2025",
       "contact": "Maximilian Liesegang (OK Lab Karlsruhe)",
       "useCases": "Unfallschwerpunkte Analyse",
       "downloadUrl": "https://my.hidrive.com/share/7tham.o1ma#$/",
@@ -109,24 +109,24 @@
       "imagePath": "img/zkmtracks.png"
     },
     {
-      "name": "TODO KA-Telraam Verkehrszähler",
-      "publisher": "OK Lab Karlsruhe",
+      "name": "Berlin zählt Mobilität! Und Karlsruhe auch.",
+      "publisher": "ADFC Berlin, Telraam, OK Lab Karlsruhe",
       "topics": ["Mobilität", "IoT"],
       "formats": ["CSV"],
-      "size": "TODO Größe und Echtzeitdaten",
-      "description": "TODO Auswertungen der Raspberry Pi-basierten Verkehrszählstellen",
+      "size": "Echtzeitdaten",
+      "description": "Wir haben verschiedene Sensoren in Karlsruhe aufgestellt, die Verkehrsteilnehmer zählen. Die Raspberry Pi-basierten Sensoren sind Teil des Netzwerks von Telraam und eine Leihgabe des Projekts 'Berlin Zählt Mobilität' / ADFC Berlin. Im Rahmen des Hackathons könnten wir diese Daten auswerten und visualisieren. Passwort: odd2025",
       "contact": "Maximilian Liesegang (OK Lab Karlsruhe)",
-      "useCases": "Verkehrsflussanalysen",
-      "downloadUrl": "TODO",
+      "useCases": "Verkehrsflussanalysen, Umweltschutz, Stadtplanung, Verkehrsplanung",
+      "downloadUrl": "https://my.hidrive.com/#$/oklab-shared/telraam",
       "imagePath": "img/telraam.png"
     },
     {
-      "name": "Karlsruher Transparenzportal: Data Dump",
+      "name": "Karlsruher Transparenzportal: Data Dump & mehr",
       "publisher": "Stadt Karlsruhe, OK Lab Karlsruhe",
-      "topics": ["Open Data", "Verwaltung"],
+      "topics": ["Open Data", "Verwaltung", "Demografie", "Migration"],
       "formats": ["PDF", "Verschiedene"],
       "size": "565 Datensätze",
-      "description": "Das Transparenzportal (transparenz.karlsruhe.de) ist die zentrale Anlaufstelle für offene Daten und Dokumente der Stadt Karlsruhe. Wir haben alle verfügbaren Datensätze heruntergeladen und aggregiert, inkl. verschiedener High-Value Datensätze. Passwort: odd2025",
+      "description": "Das Transparenzportal (transparenz.karlsruhe.de) ist die zentrale Anlaufstelle für offene Daten und Dokumente der Stadt Karlsruhe. Wir haben alle verfügbaren Datensätze heruntergeladen und aggregiert, inkl. verschiedener High-Value Datensätze. Wir haben außerdem ein paar Aufgabenstellungen formuliert, man könnte beispielsweise die Altersstruktur (in versch. Stadteilen) analysieren, das Verhätnis von Männern und Frauen vergleichen, die Alterspyramide untersuchen, schrumpfende und wachsende Ortsteile identifizieren oder Familienfreundliche Gebiete finden. Auch Bevölkerungsbewegungen und Migration könnten analysiert werden. Wie ist das Verhältnis zwischen Ausländern,  Menschen mit Migrationshintergrund und Bundesbürgern, erkennt man Unterschiede oder Trends in den Daten? Im Ordner 'tasks' findest du die für diese Fragen relevanten Datensätze. Passwort: odd2025",
       "contact": "Wolfgang Radke, Michael Riedmüller (OK Lab Karlsruhe)",
       "useCases": "Analysen rund um Karlsruhe",
       "downloadUrl": "https://my.hidrive.com/#$/oklab-shared/tp-ka",
@@ -183,4 +183,4 @@
   ]
 }
 
-/* TODO Aufgabenstellungen von Wolfang, weitere Datenportale, andere Daten aus HiDrive, Daten aus letztem Jahr? */
+/* TODO CycleSense, HiDrive: dataBW, destatis, govdata, ksk, readi, regstatis, statistikAtlas-ka */
