@@ -1,0 +1,57 @@
+name: LaTeX Compilation and Deployment
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # Step 1: Compile LaTeX to PDF using LuaLaTeX
+      - name: Compile LaTeX document to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          latexmk_use_lualatex: true
+          latexmk_shell_escape: true
+      
+      # Step 2: Upload PDF as artifact
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF
+          path: main.pdf
+      
+      # Step 3: Create a release with the PDF
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          name: Latest PDF Build
+          files: main.pdf
+          body: Automatically generated PDF from LaTeX source
+          draft: false
+          prerelease: false
+      
+      # Step 4: Convert LaTeX to HTML using make4ht
+      - name: Convert LaTeX to HTML
+        uses: docker://ghcr.io/michal-h21/make4ht-action:latest
+        env:
+          command: "make4ht -ulm draft -d html main.tex 'mathjax,svg'"
+      
+      # Step 5: Deploy HTML to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./html
+          enable_jekyll: false
+          force_orphan: true
