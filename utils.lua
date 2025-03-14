@@ -23,7 +23,7 @@ function centeredImage(filename)
             and [[\includegraphics[width=\textwidth,height=8cm,keepaspectratio]{]] .. filename .. [[}]]
             or [[\framebox[\textwidth][c]{\parbox{8cm}{\centering Bildplatzhalter}}]]
             
-    local wrapperEnd = [[\end{center}  \\ ]]
+    local wrapperEnd = [[\end{center}  \leavevmode\\ ]]
 
     return (wrapperBegin .. image .. wrapperEnd) 
 end
