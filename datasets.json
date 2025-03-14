@@ -77,11 +77,11 @@
       "publisher": "Stadt Karlsruhe (Umweltamt) / OK Lab Karlsruhe",
       "topics": ["Klima", "Energie"],
       "formats": ["PDF", "XLS", "CSV", "SHP"],
-      "size": "TODO",
-      "description": "TODO Datenbasis für das Klimadashboard-Prototyp mit Maßnahmenkatalog. Wo steht Karlsruhe beim Klimaschutz? Dashboard Prototyp unter: https://dashboard.daten.city . QGIS, Geopandas, Shapely etc. nützlich.",
+      "size": "siehe Repo",
+      "description": "Datenbasis für das Klimadashboard-Prototyp mit Maßnahmenkatalog. Wo steht Karlsruhe beim Klimaschutz? Dashboard Prototyp unter: https://dashboard.daten.city . QGIS, Geopandas, Shapely etc. nützlich.",
       "contact": "Andreas Kugel (OK Lab Karlsruhe)",
       "useCases": "Klimamonitoring, Klimadashboard, Heatmaps, OSM-Synchronisation",
-      "downloadUrl": "TODO",
+      "downloadUrl": "https://github.com/digital-codes/klimaDashboard",
       "imagePath": "img/klimadashboard.png"
     },
     {
@@ -133,6 +133,18 @@
       "imagePath": "img/transparenzportal.png"
     },
     {
+      "name": "Re@di: Open Data Portal für Ettlingen, Baden-Baden und weitere Städte",
+      "publisher": "Stadt Ettlingen & weitere",
+      "topics": ["Open Data", "Verwaltung"],
+      "formats": ["HTML", "CSV", "PDF", "XLSX", "GeoJSON", "..."],
+      "size": "133 Datensätze",
+      "description": "Das re@di-OpenDataPortal (https://opendata.readi.de/) ist die zentrale Anlaufstelle für offene Daten und Dokumente 8 großer Kreisstädte und 1 Stadtkreiß rund um Karlsruhe (Baden-Baden, Bretten, Bruchsal, Ettlingen, Rastatt, Rheinstetten und Stutensee). Zu den Datensätzen gehören unter anderem Trinkwasseranalysen, Wetter und Sensorikdaten, Wahlergebnisse, der Haushaltsplan, Bevölkerungsstatistiken und ein Mietspiegel. Passwort: odd2025",
+      "contact": "Oliver Hermann (Stadt Ettlingen, IuK)",
+      "useCases": "Open Data Analysen",
+      "downloadUrl": "https://my.hidrive.com/#$/oklab-shared/readi",
+      "imagePath": "img/readi.png"
+    },
+    {
       "name": "Baumkataster Karlsruhe",
       "publisher": "Stadt Karlsruhe, OK Lab Karlsruhe",
       "topics": ["Umweltschutz", "Open Data", "Verwaltung"],
@@ -149,7 +161,7 @@
       "publisher": "Studio Blaupause",
       "topics": ["eXtended Reality", "Augmented Reality", "Digitale Kunst"],
       "formats": ["glb (animiert, statisch)", "mp4", "webp"],
-      "size": "TODO ",
+      "size": "10 Kunstwerke",
       "description": "XR-3D-Modelle, Videos und Bilder für eine neue XR-Plattform für den öffentlichen Raum. Eure Challenge: Eine skalierbare WebXR-Plattform programmieren, vorzugsweise mit AR.js. Die Inhalte sollen über QR/XR Code Cubes erreichbar sein und positionsgenau eingebunden und dynamisch dargestellt werden. Dazu passend Eine intuitive und informative Benutzeroberfläche gestalten – responsive, performant, nutzerzentriert. Passwort: odd2025",
       "contact": "Marvin Bauch, Julia Federspiel (Studio Blaupause)",
       "useCases": "Digitale Kunstausstellung in Karlsruhe",
@@ -183,4 +195,4 @@
   ]
 }
 
-/* TODO CycleSense, HiDrive: dataBW, destatis, govdata, ksk, readi, regstatis, statistikAtlas-ka */
+/* TODO CycleSense, HiDrive: dataBW, destatis, govdata, ksk, regstatis, statistikAtlas-ka */
