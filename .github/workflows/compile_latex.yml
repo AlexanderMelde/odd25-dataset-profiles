@@ -61,7 +61,7 @@ jobs:
       - name: Copy main.html to index.html
         run: |
           if [ -f ./html/main.html ]; then
-            cp ./html/main.html ./html/index.html
+            sudo cp ./html/main.html ./html/index.html
             echo "Successfully copied main.html to index.html"
           else
             echo "Error: main.html not found in ./html directory"
