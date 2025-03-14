@@ -56,8 +56,20 @@ jobs:
         uses: docker://ghcr.io/michal-h21/make4ht-action:latest
         env:
           command: "make4ht -ulm draft -d html main.tex 'mathjax,svg'"
-      
-      # Step 5: Upload Pages artifact
+
+     # Step 5: Copy main.html to index.html
+      - name: Copy main.html to index.html
+        run: |
+          if [ -f ./html/main.html ]; then
+            cp ./html/main.html ./html/index.html
+            echo "Successfully copied main.html to index.html"
+          else
+            echo "Error: main.html not found in ./html directory"
+            ls -la ./html
+            exit 1
+          fi
+
+      # Step 6: Upload Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
