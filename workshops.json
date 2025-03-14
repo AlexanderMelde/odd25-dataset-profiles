@@ -1,0 +1,81 @@
+{
+  "workshops": [
+        {
+          "name": "CKAN + Open Data Apps - vom Portal zur Anwendung",
+          "referent": "TODO (OK Lab Karlsruhe)",
+          "topics": ["Open Data", "Verwaltung"],
+          "format": "Workshop",
+          "time": "Samstag 10:30 Uhr - 11:15 Uhr",
+          "description": "TODO Data-Retrieval",
+          "prerequisites": "Keine",
+          "location": "TODO",
+          "imagePath": "img/ckan.jpg"
+        },
+        {
+          "name": "Power für offene Daten mit PowerBI oder anderen DataTools",
+          "referent": "TODO (OK Lab Karlsruhe)",
+          "topics": ["Open Data", "Verwaltung", "Visualisierung"],
+          "format": "Workshop",
+          "time": "Samstag 11:30 Uhr - 12:15 Uhr",
+          "description": "TODO Data-Visualization",
+          "prerequisites": "Keine",
+          "location": "TODO",
+          "imagePath": "img/powerbi.png"
+        },
+        {
+          "name": "Führung House of Living Labs",
+          "referent": "TODO (FZI Forschungszentrum Informatik)",
+          "topics": ["Open Data", "Verwaltung"],
+          "format": "Führung",
+          "time": "Samstag 12:30 Uhr - 13:00 Uhr",
+          "description": "TODO Unsere Location: Mitten in der IT-Region Karlsruhe hat das FZI auf zwei Stockwerken mit über 2.000 Quadratmetern eine neuartige Forschungsumgebung insbesondere für kleine und mittlere Unternehmen geschaffen, die branchen- und anwendungsfeldübergreifend für Forschung und Entwicklung zur Verfügung steht: das FZI House of Living Labs. In der Führung lernst du die verschiedenen Forschungsprojekte kennen, siehst, wie hier evaluaiert und entwickelt wird, entdeckst Real-Life Szenarien und findest heraus, welche Ideen und Innovationen hier schon generiert wurden.",
+          "prerequisites": "Keine",
+          "location": "TODO",
+          "imagePath": "img/fziholl.png"
+        },
+        {
+          "name": "Datenanalyse mit Kryptographischen Methoden ohne Kryptographischer Expertise",
+          "referent": "TODO (OK Lab Karlsruhe)",
+          "topics": ["Open Data", "Verwaltung"],
+          "format": "Workshop",
+          "time": "Samstag 14:30 Uhr - 15:15 Uhr",
+          "description": "TODO",
+          "prerequisites": "Keine",
+          "location": "TODO",
+          "imagePath": "img/krypto.png"
+        },
+        {
+          "name": "Ich will digital sein! Wie du einen 3D Scan von dir machst",
+          "referent": "Marvin Bauch (Studio Blaupause)",
+          "topics": ["Virtual Reality"],
+          "format": "Vortrag & Workshop",
+          "time": "Samstag 15:30 Uhr - 16:15 Uhr",
+          "description": " Überblick über Scanverfahren, technische Hintergründe, Dateiformate, Mit Live-Demo. Wer mag kann sich (grob) einscannen (lassen), im Anschluss.",
+          "prerequisites": "Keine",
+          "location": "TODO",
+          "imagePath": "img/3dperson.jpg"
+        },
+        {
+          "name": "Ist das noch Bildhauerei? Von VR Modellierung bis zum 3D Druck",
+          "referent": "Julia Federspiel (Studio Blaupause)",
+          "topics": ["Virtual Reality"],
+          "format": "Vortrag & Workshop",
+          "time": "TODO",
+          "description": " Überblick über Kunstrichtungen insb. klassische Bildhauerei und wie sich diese im Kontext moderner Werkzeuge (3D Scan, 3D Druck, VR Modellierung) widerspiegelt. Mit VR Brille und Hands-On Experience - wer mag kann sein eigenes Kunstwerk modellieren.",
+          "prerequisites": "Keine",
+          "location": "TODO",
+          "imagePath": "img/bildhauereivr.jpg"
+        },
+        {
+          "name": "Mini City",
+          "referent": "Daniel Schwarz (Hochschule Karlsruhe)",
+          "topics": ["Virtual Reality"],
+          "format": "Workshop",
+          "time": "Samstag 16:30 Uhr - 17:15 Uhr",
+          "description": " TODO.",
+          "prerequisites": "Keine",
+          "location": "TODO",
+          "imagePath": "img/minicity.png"
+        }
+    ]
+}

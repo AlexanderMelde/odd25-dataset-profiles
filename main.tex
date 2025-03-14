@@ -12,62 +12,77 @@
 
 
 \begin{luacode*} 
-function generate_entries()
-    local datasets = load_datasets("datasets.json")
-    if not datasets then
-        tex.print([[\textbf{Fehler: Konnte datasets.json nicht laden!}]])
-        return
-    end
+function generateDatasetEntries()
+    local _, datasets = pcall(loadJson, "datasets.json")
 
     for _, ds in ipairs(datasets.datasets) do
 
-        meta = [[
-            \section*{]].. escape_latex(ds.name) ..[[}
-            \textbf{Herausgeber:} ]] .. escape_latex(ds.publisher) .. [[ \\[0.5em]
-            \textbf{Themen:} ]] .. escape_latex(table.concat(ds.topics, ", ")) .. [[ \\[0.5em]
-            \textbf{Format:} ]] .. escape_latex(table.concat(ds.formats, ", ")) .. [[ \\[0.5em]
-            \textbf{Größe:} ]] .. escape_latex(ds.size) .. [[ \\[0.5em]
+        local meta = [[
+            \section*{]].. escapeLatex(ds.name) ..[[}
+            \textbf{Herausgeber:} ]] .. escapeLatex(ds.publisher) .. [[ \\[0.5em]
+            \textbf{Themen:} ]] .. escapeLatex(table.concat(ds.topics, ", ")) .. [[ \\[0.5em]
+            \textbf{Format:} ]] .. escapeLatex(table.concat(ds.formats, ", ")) .. [[ \\[0.5em]
+            \textbf{Größe:} ]] .. escapeLatex(ds.size) .. [[ \\[0.5em]
             \textbf{Kurzbeschreibung:} \\
-            ]].. escape_latex(ds.description) ..[[ \\[0.5em]
-            \begin{center}
+            ]].. escapeLatex(ds.description) ..[[ \\[0.5em]
+        ]]
+      
+        local image = centeredImage(ds.imagePath)
+
+        local contact = [[
+            \textbf{Ansprechpartner:}  ]] .. escapeLatex(ds.contact) .. [[ \\[1em]
+            \textbf{Verwendungszwecke:} ]] ..  escapeLatex(ds.useCases) .. [[ \\[1em]
+            \textbf{Download:} ]] .. downloadWithQRCode(ds.downloadUrl) .. [[ \clearpage
         ]]
 
-      
-        image = (ds.imagePath and ds.imagePath ~= "")  
-                and [[\includegraphics[width=\textwidth,height=8cm,keepaspectratio]{]] .. ds.imagePath .. [[}]]
-                or [[\framebox[\textwidth][c]{\parbox{8cm}{\centering Bildplatzhalter}}]]
-
-        contact = [[
-            \end{center}
-            \\
-            \textbf{Ansprechpartner:}  
-            ]] .. escape_latex(ds.contact) .. [[
-            \\[1em]
-            \textbf{Verwendungszwecke:} 
-            ]] ..  escape_latex(ds.useCases) .. [[
-            \\[1em]
-            \textbf{Download:} 
-            \url{]] .. ds.downloadUrl .. [[} \\
-            \begin{center}
-                \qrcode[height=3cm]{]] .. escape_latex(ds.downloadUrl) .. [[}
-            \end{center}
-            \clearpage
-            ]]
-
-
-        output_cleaned, _ = (meta .. image .. contact) :gsub("[\n\r]", " ")
-        tex.print(output_cleaned)
+        outputLatex(meta .. image .. contact)
     end
 end
+
+
+function generateWorkshopEntries()
+    local _, workshops = pcall(loadJson, "workshops.json")
+
+    for _, ds in ipairs(workshops.workshops) do
+
+        local meta = [[
+            \section*{]].. escapeLatex(ds.name) ..[[}
+            \textbf{Sprecher:} ]] .. escapeLatex(ds.referent) .. [[ \\[0.5em]
+            \textbf{Themen:} ]] .. escapeLatex(table.concat(ds.topics, ", ")) .. [[ \\[0.5em]
+            \textbf{Format:} ]] .. escapeLatex(ds.format) .. [[ \\[0.5em]
+            \textbf{Zeit} ]] .. escapeLatex(ds.time) .. [[ \\[0.5em]
+            \textbf{Kurzbeschreibung:} \\ 
+            ]] .. escapeLatex(ds.description) .. [[ \\[0.5em]
+        ]]
+
+        local image = centeredImage(ds.imagePath)
+
+        local contact = [[
+            \textbf{Voraussetzungen:} ]] .. escapeLatex(ds.prerequisites) .. [[ \\[1em]
+            \textbf{Ort:} ]] .. escapeLatex(ds.location) .. [[ \clearpage
+        ]]
+
+        outputLatex(meta .. image .. contact)
+    end
+end
+
 \end{luacode*}
 
 % Header configuration
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{dataprofile}{
 \lhead{
     \textbf{Open Data Hack-Days Karlsruhe 2025} \\[0.2cm]
     \small Daten-Steckbrief
+}
+}
+\fancypagestyle{workshop}{
+\lhead{
+    \textbf{Open Data Hack-Days Karlsruhe 2025} \\[0.2cm]
+    \small Workshop
+}
 }
 \rhead{
     \includesvg[width=2cm,height=2cm,keepaspectratio]{img/codeforka.svg}
@@ -78,5 +93,8 @@ end
 % Document
 \begin{document}
     \directlua{dofile("utils.lua")}
-    \directlua{generate_entries()}
+    \pagestyle{dataprofile}
+    \directlua{generateDatasetEntries()}
+    \pagestyle{workshop}
+    \directlua{generateWorkshopEntries()}
 \end{document}
